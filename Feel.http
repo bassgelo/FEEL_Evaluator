@@ -1,0 +1,19 @@
+### POST evaluate feel expression
+POST localhost:8080/api/feel/evaluate
+Content-Type: application/json
+
+{
+  "expression": "\"Hello, World!\"",
+  "variables": {}
+}
+
+### POST evaluate feel expression
+POST localhost:8080/api/feel/evaluate
+Content-Type: application/json
+
+{
+  "expression": "\"if age > 18 then 'Adult' else 'Minor'\"",
+  "variables": {
+    "age": 20
+  }
+}
